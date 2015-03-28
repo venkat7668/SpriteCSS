@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Developed by Venkat</title>
+<link href="css/global.css" rel="stylesheet" />
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/Packer/packer.js"></script>
+<script type="text/javascript" src="scripts/getFiles.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+</head>
+<body>
+<div id="app">
+  <div id="settings">
+    <div id="csize">
+      <div class="heading">Canvas Size</div>
+      <select id="canvasSizedb">
+        <option>16x16</option>
+        <option>128x128</option>
+        <option >256x256</option>
+        <option>512x289</option>
+        <option selected>1024x1024</option>
+        <option>2048x2048</option>
+        <option>Custom Size</option>
+      </select>
+      <div id="customSize">
+        <input type="text" placeholder="Width" disabled="disabled" />
+        <input type="text" placeholder="Height" disabled="disabled" />
+        <input type="button" value="Resize" disabled="disabled" id="resizeBtn" />
+      </div>
+    </div>
+    <div id="bColor">
+      <div class="heading">Background Color</div>
+      <div id="transCb">
+        <input type="checkbox" id="transprentBg" checked="checked" />
+        Transparent</div>
+      <input type="color" id="bgColor" disabled="disabled" value="#ffffff" />
+      <div class="clear"></div>
+    </div>
+    <div id="iType">
+      <div class="heading">Image Type</div>
+      <select id="imageType">
+        <option value="png"  selected>PNG</option>
+        <option value="jpeg">JPEG</option>
+      </select>
+      <input type="button" id="showSprite" value="Show Sprite"/>
+      <input type="button" id="download_css" value="Download CSS"/>
+    </div>
+  </div>
+  
+  
+  <div id="workArea">
+    <div id="popup">
+      <div id="closeBtn">X</div>
+      <div id="popContent"> </div>
+      <div id="optimize">
+        <output id="qulityValue">100</output>
+        <input id="quality" type="range" min="0" max="100" step="1" onChange="qulityValue.value=value" value="100"/>
+        <input type="button" id="optimizeButton" value="Optimize"/>
+        <span id="fileSize">size: 123kb</span>
+        <input type="button" id="download_Sprite" value="Download Sprite"/>
+      </div>
+    </div>
+    <div id="canvasRoot">
+      <canvas  id="stage" width="800" height="400"></canvas>
+    </div>
+  </div>
+</div>
+</body>
+</html>

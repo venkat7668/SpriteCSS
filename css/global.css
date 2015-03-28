@@ -1,0 +1,169 @@
+/*author : venkat*/
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#app{
+	width:100%;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#settings{
+	width:300px;
+	background-color:#747171;
+	height:100%;
+	float:left;
+	font-size:20px;
+}
+#csize,#bColor,#iType{
+	padding:10px;
+	text-align: center;
+}
+#canvasSizedb,#imageType{
+	width:90%;
+	padding:10px;
+}
+#customSize{
+	margin-top:5px;
+}
+#customSize input[type='text']{
+	padding:10px;
+	width:35.5%;
+	display:inline;
+}
+#resizeBtn,#showSprite,#showCSS,#download_css{
+	margin-top:5px;
+	width:90%;
+	padding:10px;
+}
+#bgColor{
+	width:60px;
+	height:35px;
+	border:1px solid #232323;
+	float:left;
+	left:13px;
+	position:relative;
+}
+#bColor input[type="color"]:disabled{
+    opacity:0.2;
+}
+.heading{
+	color:#c9c9c9;
+	text-align:left;
+	padding:5px 13px;
+}
+.clear{
+	clear:left;
+}
+#transCb{
+	text-align:left;
+	padding:5px 13px;
+	font-size:12px;
+}
+#preview{
+	padding:0px 10px;
+}
+/*right side panel*/
+#workArea{
+	height:100%;
+	width:calc(100% - 300px);
+	background-color:#f3f3f3;
+	overflow:auto;
+	float:left;
+	position:relative;
+}
+#canvasRoot{
+	background-color:#3f3f3f;
+	position:relative;
+	min-width:1024px;
+	/*min-height:700px;*/
+	width:100%;
+	height:100%;
+	overflow:auto;
+}
+#stage{
+	margin:0 auto;	
+	position:absolute;
+	background:#fff url(../images/canvasBg.png) 0 0 repeat;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:1024px;
+	height:1024px;
+}
+/*popup*/
+#popup{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:RGBA(0,0,0,0.8);
+	z-index:1;
+	display:none;
+}
+#closeBtn{
+	border-radius: 10px;
+	width: 15px;
+	height: 25px;
+	background-color: red;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 17px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+}
+#popContent{
+	width:80%;
+	height:80%;
+	margin:0px auto;
+	background:green;
+	margin-top:5%;
+	overflow:auto;
+}
+#popContent img{
+	border:1px solid #000;
+}
+#optimize{
+	width: 500px;
+	height: 22px;
+	margin: 0 auto;
+	background: #00bbac;
+	margin-top: 20px;
+	padding: 10px;
+}
+#optimize input[type=range] {
+    -webkit-appearance: none;
+    background-color: #007067;
+    width: 150px;
+    height:8px;
+}
+
+#optimize input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: #013e39;
+    width: 14px;
+    height: 14px;
+}
+#optimizeButton,#download_Sprite{
+	padding:5px 10px;
+	background:#01a194;
+	border:0px;
+}
+#fileSize{
+	float:right;
+}
+#qulityValue{
+	width: 39px;
+	text-align: center;
+	float: left;
+	line-height: 25px;
+}
