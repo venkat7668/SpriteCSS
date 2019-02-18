@@ -3,7 +3,11 @@ $(function(){
 	var app=new App();
 
 	app.init();
-
+	
+	//hide msg 
+	$("#stage").bind("drop",function(){
+		$(".dropMsg").hide();
+	});
 	$("#download_css").bind("click",function(){
 		var css=app.genCss(app.sprites);
 		app.downloadCSS('sprite.css',css);
